@@ -1,0 +1,204 @@
+body {
+  background: linear-gradient(to top, #3b2c1b 0%, black 20%, #1e2936 100%);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 22px;
+  font-family: "Rock Salt", cursive;
+}
+body .blue {
+  color: #098bd6;
+}
+body .orange {
+  color: #ff6400;
+}
+body p {
+  margin: 0;
+  line-height: 1;
+}
+body p:first-of-type {
+  margin-top: 20px;
+}
+body #info {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  pointer-events: all;
+}
+body #info small {
+  line-height: 1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body h1 {
+  font-weight: 400;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+body canvas {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+}
+body #gui {
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  z-index: 999;
+  text-align: right;
+  font-size: 22px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+body #gui span {
+  font-size: 60px;
+  margin-left: 5px;
+}
+body #overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(255, 153, 50, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(28, 126, 255, 0.5) 100%);
+  pointer-events: none;
+}
+body #overlay.shown {
+  pointer-events: none;
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+body #timeout {
+  box-shadow: 0 0 200px 100px black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%) scale3d(1, 1, 1) rotate(-10deg);
+  transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3s;
+  z-index: 999;
+  font-size: 3vw;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 35px;
+  line-height: 1;
+  text-align: center;
+  display: none;
+}
+body #timeout.shown {
+  transform: translate(-50%, -55%) scale3d(1.3, 1.3, 1) rotate(-1deg);
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  display: block;
+}
+body #timeout button {
+  font-size: 20px;
+}
+body .hidden-elements {
+  display: none;
+}
+body button {
+  border: none;
+  padding: 30px 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+  background-color: #098bd6;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  transform: scale3d(1, 1, 1);
+  color: #fff;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0);
+}
+body button:hover, body button:focus {
+  transform: scale3d(1.2, 1.2, 1.2);
+  background-color: #cc5000;
+  box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.4);
+}
+body .pe {
+  pointer-events: none;
+}
+body .pa {
+  pointer-events: all;
+}
+
+@media screen and (max-width: 990px) {
+  body {
+    font-size: 12px;
+  }
+  body #info {
+    bottom: 25px;
+    left: 25px;
+    top: 20px;
+  }
+  body #gui {
+    top: 20px;
+  }
+  body h1 small {
+    display: none;
+  }
+  body #timeout {
+    padding: 0px 12px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+::-moz-selection {
+  background-color: #ff6400;
+  color: #098bd6;
+}
+::selection {
+  background-color: #ff6400;
+  color: #098bd6;
+}
+
+::-moz-selection {
+  background-color: #ff6400;
+  color: #098bd6;
+}

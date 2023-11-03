@@ -1,0 +1,64 @@
+<svg id="game" viewBox="0 0 100 120" style="opacity:0" stroke-width="0.65">
+  <g id="board">
+    <g id="grid" fill="#0f2"></g>
+    <g id="bot" stroke="#fff">
+      <g class="ant">
+        <path d="M5,1L5,-1"/>
+        <circle cx="5" cy="-1" r="0.5" />
+      </g>
+      <rect x="-0.5" y="4" width="11" height="2" rx="0.5"/>
+      <rect x="1" y="1" width="8" height="8" rx="2"/>
+      <circle cx="4" cy="4" r="1" />
+      <circle cx="6" cy="4" r="1" />
+      <path class="mouth" d="M3,6.8L4,6.8L6,6.8L7,6.8" fill="none" />
+    </g>
+    <g class="stars" stroke="#fff">
+      <defs>
+        <path id="star" d="M5,2L6,4L8,4.5L6.5,6L7,8L5,7L3,8L3.5,6L2,4.5L4,4z" />
+      </defs>
+      <use id="star1" href="#star"/>
+      <use id="star2" href="#star"/>
+      <use id="star3" href="#star"/>
+    </g>
+  </g>
+  
+  <text class="txt1" fill="#0f2" text-anchor="middle" x="50" y="64">LEVEL 1</text>
+  <text class="txt2" fill="#fff" text-anchor="middle" x="50" y="60" font-size="5">Levels complete 0</text>
+  <text class="txt3" fill="#fff" text-anchor="middle" x="50" y="69" font-size="5">Best: Level 6</text>
+  <g id="replay">
+    <rect width="49" height="13" x="25" y="76" rx="3" stroke="#fff"/>
+    <text class="txt4" fill="#fff" text-anchor="middle" x="50" y="85" font-size="7">PLAY AGAIN</text>
+  </g>
+  
+</svg>
+
+<svg id="controls" viewBox="0 0 100 40" stroke="#fff" stroke-width="0.5">
+  <g id="up">
+    <rect x="65" y="1" width="12" height="12" rx="3"/>
+    <path d="M71,5L73,8.5L69,8.5z" />
+  </g>
+  <g id="down">
+    <rect x="65" y="17" width="12" height="12" rx="3"/>
+    <path d="M71,25L73,21.5L69,21.5z" />
+  </g>
+  <g id="left">
+    <rect x="50" y="9" width="12" height="12" rx="3"/>
+    <path d="M54,15L57.5,13L57.5,17z" />
+  </g>
+  <g id="right">
+    <rect x="80" y="9" width="12" height="12" rx="3"/>
+    <path d="M84.5,13L88,15L84.5,17z" />
+  </g>
+  <g class="markers">
+    <use href="#star" x="30" y="0"/>
+    <use href="#star" x="30" y="9"/>
+    <use href="#star" x="30" y="18"/>
+  </g>
+  <g class="clock">
+    <path d="M12.5,5L17.5,5M15,5L15,8" stroke-width="1" />
+    <circle cx="15" cy="15" r="7" />
+    <circle cx="15" cy="15" r="5" stroke-width="0.8" stroke-dasharray=".5 1" />
+    <circle cx="15" cy="15" r="1" fill="#fff"/>
+    <path id="timer" d="M15,15L15,9.5" stroke-width="0.6" />
+  </g>
+</svg>

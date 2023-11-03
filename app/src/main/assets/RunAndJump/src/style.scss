@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+*{box-sizing: border-box;
+-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  font-family: 'Fjalla One', sans-serif;
+}
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0px;
+}
+
+.game{
+  width:1080px;
+  float:left;
+  margin-left:-540px;
+  height:720px;
+  border:1px solid #ccc;
+  // background:#fff;
+  overflow:hidden;
+  position:relative;
+   top:20px;
+  left:50%;
+  background:url('https://image.shutterstock.com/z/stock-vector-funny-cartoon-winter-landscape-seamless-background-for-game-design-340581446.jpg');
+  -webkit-animation:50s scroll infinite linear;
+  -moz-animation:50s scroll infinite linear;
+  -o-animation:50s scroll infinite linear;
+  -ms-animation:50s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  
+  .character{
+     width: 70px;
+    height: 90px;
+    bottom:0;
+    left:2%;
+   position:absolute;
+    background: url('http://i.imgur.com/aQ8fj.png') left center;
+    // background-size:100px 200px;
+    background-repeat: no-repeat;
+    animation: play .9s steps(8) infinite;
+    }
+  
+    .block{
+      width:50px;
+      height:60px;
+      background:#000;
+      float:left;
+      bottom:1px;
+      left:100%;
+      position:absolute;
+      background-image:url('http://freebeergames.github.io/Solobot/Docs/normal_mapping/crate.jpg');
+      background-size:cover;
+      background-position:center;
+      
+      // &.stack{
+      //   height:150px;
+      // }
+      &.colided{
+        opacity:0;
+         transition:all 0.2s ease;
+      -webkit-transition:all 0.2s ease;
+      }
+      &.stack{
+        height:40%;
+        width:50px;
+      
+      }
+      &.float{
+        bottom:0%;
+        height:25%;
+        width:50px;
+      }
+      &.longfloat{
+        bottom:0%;
+        height:25%;
+        width:150px;
+      }
+       &.mid{
+        bottom:0%;
+        height:30%;
+        width:40px;
+      }
+      &.bobber1{
+          height:50px;
+        height:50px;
+        -webkit-animation: random(1) + s bob infinite linear;
+  -moz-animation:random(1) + s bob infinite linear;
+  -o-animation:random(1) + s bob infinite linear;
+  -ms-animation:random(1) + s bob infinite linear;
+  animation:random(1) + s bob infinite linear;
+      }
+       &.bobber2{
+          height:50px;
+        height:50px;
+         bottom:80%;
+        -webkit-animation:random(1) + s bob2 infinite linear;
+  -moz-animation:random(1) + s bob2 infinite linear;
+  -o-animation:random(1) + s bob2 infinite linear;
+  -ms-animation:random(1) + s bob2 infinite linear;
+  animation:random(1) + s bob2 infinite linear;
+      }
+      &.heart{
+        width:50px;
+        height:50px;
+        background-image:url('') !important;
+        background:rgba(0,0,0,0) !important;
+        text-align:center;
+        color:#c30c60;
+        font-size:30pt;
+         -webkit-animation:1.5s bob3 infinite linear;
+  -moz-animation:1.5s bob3 infinite linear;
+  -o-animation:1.5s bob3 infinite linear;
+  -ms-animation:1.5s bob3 infinite linear;
+  animation:1.5s bob3 infinite linear;
+      }
+       &.slider1{
+        width:50px;
+        height:30%;
+         -webkit-animation:.5s slide1 infinite linear;
+  -moz-animation:.5s slide1 infinite linear;
+  -o-animation:.5s slide1 infinite linear;
+  -ms-animation:.5s slide1 infinite linear;
+  animation:.5s slide1 infinite linear;
+      }
+      &.slider1{
+        width:150px;
+        height:30%;
+        bottom:10%;
+         -webkit-animation:.5s slide2 infinite linear;
+  -moz-animation:.5s slide2 infinite linear;
+  -o-animation:.5s slide2 infinite linear;
+  -ms-animation:.5s slide2 infinite linear;
+  animation:.5s slide2 infinite linear;
+      }
+    }
+  .stats{
+    width:100%;
+    color:#fff;
+    float:left;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    text-align:right;
+    padding:10px;
+    margin:0px;
+    font-size:30pt;
+    position:absolute;
+    top:0;
+    left:0;
+    span{
+      margin-right:10px;
+    }
+  }
+  #lives{
+    position:absolute;
+    color:#c60c30;
+    padding:10px;
+    left:0px;
+    float:left;
+    padding-top:0px;
+    margin-top:10px;
+    font-size:30pt;
+    
+    i{
+      opacity:1;
+      transition:all 0.5s ease;
+      -webkit-transition:all 0.5s ease;
+    }
+    &.livesLeft_2 i:nth-child(3){
+    
+      opacity:0;
+    }
+     &.livesLeft_1 i:nth-child(3), &.livesLeft_1 i:nth-child(2){
+     
+      opacity:0;
+    }
+     &.livesLeft_0 i{
+     
+      opacity:0;
+    }
+  }
+  
+  h1{
+    width:100%;
+    font-size:30pt;
+    text-align:center;
+    position:absolute;
+    float:left;
+    width:100%;
+    top:40%;
+    pointer-events:none;
+    opacity:1;
+    transition:all 0.5s ease;
+    color:#fff;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    -webkit-transition:all 0.5s ease;
+    letter-spacing:2px;
+    &.gameOn{
+      opacity:0;
+    }
+  }
+}
+
+.landscapeMessage{
+  float:left;
+  width:100%;
+  background:#000;
+  height:100%;
+  z-index:1000;
+  position:fixed;
+    display:none;
+  &.open{
+    display:block;
+  }
+  p{
+    color:#fff;
+    float:left;
+    width:100%;
+    text-align:center;
+    position:relative;
+    top:40%;
+    font-size:14pt;    
+  }
+}
+
+@media screen and (max-width:1080px){
+  .game{
+  width:100%;
+  float:left;
+  margin-left:0px;
+  // height:100%;
+  border:0px solid #ccc;
+  // background:#fff;
+  overflow:hidden;
+  position:relative;
+   top:0px;
+  left:0%;
+  }
+}
+@media screen and (max-height:720px){
+  .game{
+  // width:1080;
+  float:left;
+  margin-left:0px;
+  height:100%;
+  border:0px solid #ccc;
+  // background:#fff;
+  overflow:hidden;
+  position:relative;
+   top:0px;
+  left:0%;
+  }
+}
+
+@keyframes play {
+    100% { background-position: -512px; }
+}
+
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:-3000px 000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:-3000px 00px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:-3000px 000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:-3000px 000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:-3000px 000px;
+  }
+}
+
+
+
+// 
+@-webkit-keyframes bob{
+  0%{bottom:0px;}
+  50%{bottom:20%;}
+  100%{bottom:0px;}
+}
+
+@-moz-keyframes  bob{
+  0%{bottom:0px;}
+  50%{bottom:20%;}
+  100%{bottom:0px;}
+}
+
+@-o-keyframes  bob{
+  0%{bottom:0px;}
+  50%{bottom:20%;}
+  100%{bottom:0px;}
+}
+
+@-ms-keyframes bob{
+  0%{bottom:0px;}
+  50%{bottom:20%;}
+  100%{bottom:0px;}
+}
+
+@keyframes  bob{
+  0%{bottom:0px;}
+  50%{bottom:20%;}
+  100%{bottom:0px;}
+}
+
+// 
+@-webkit-keyframes bob2{
+  0%{bottom:10%;}
+  50%{bottom:30%;}
+  100%{bottom:10%;}
+}
+
+@-moz-keyframes  bob2{
+   0%{bottom:10%;}
+  50%{bottom:30%;}
+  100%{bottom:10%;}
+}
+
+@-o-keyframes bob2{
+   0%{bottom:10%;}
+  50%{bottom:30%;}
+  100%{bottom:10%;}
+}
+
+@-ms-keyframes bob2{
+  0%{bottom:10%;}
+  50%{bottom:30%;}
+  100%{bottom:10%;}
+}
+
+@keyframes  bob2{
+   0%{bottom:10%;}
+  50%{bottom:30%;}
+  100%{bottom:10%;}
+}
+
+
+// 
+@-webkit-keyframes bob3{
+  0%{bottom:80%;}
+  25%{bottom:0%}
+  50%{bottom:70%;}
+  75%{bottom:20%;}
+  100%{bottom:80%;}
+}
+
+@-moz-keyframes  bob3{
+  0%{bottom:80%;}
+  25%{bottom:0%}
+  50%{bottom:70%;}
+  75%{bottom:20%;}
+  100%{bottom:80%;}
+}
+
+@-o-keyframes bob3{
+  0%{bottom:80%;}
+  25%{bottom:0%}
+  50%{bottom:70%;}
+  75%{bottom:20%;}
+  100%{bottom:80%;}
+}
+
+@-ms-keyframes bob3{
+  0%{bottom:80%;}
+  25%{bottom:0%}
+  50%{bottom:70%;}
+  75%{bottom:20%;}
+  100%{bottom:80%;}
+}
+
+@keyframes bob3{
+  0%{bottom:80%;}
+  25%{bottom:0%}
+  50%{bottom:70%;}
+  75%{bottom:20%;}
+  100%{bottom:80%;}
+}
+
+
+
+// 
+@-webkit-keyframes slide1{
+  0%{margin-left:0px;}
+  50%{margin-left:150px;}
+  100%{margin-left:0px;}
+}
+
+@-moz-keyframes  slide1{
+  0%{margin-left:0px;}
+  50%{margin-left:150px;}
+  100%{margin-left:0px;}
+}
+
+@-o-keyframes slide1{
+  0%{margin-left:0px;}
+  50%{margin-left:150px;}
+  100%{margin-left:0px;}
+}
+
+@-ms-keyframes slide1{
+  0%{margin-left:0px;}
+  50%{margin-left:150px;}
+  100%{margin-left:0px;}
+}
+
+@keyframes slide1{
+  0%{margin-left:0px;}
+  50%{margin-left:150px;}
+  100%{margin-left:0px;}
+}
+
+// 
+@-webkit-keyframes slide2{
+  0%{margin-left:0px;}
+  50%{margin-left:250px;}
+  100%{margin-left:0px;}
+}
+
+@-moz-keyframes  slide2{
+  0%{margin-left:0px;}
+  50%{margin-left:250px;}
+  100%{margin-left:0px;}
+}
+
+@-o-keyframes slide2{
+  0%{margin-left:0px;}
+  50%{margin-left:250px;}
+  100%{margin-left:0px;}
+}
+
+@-ms-keyframes slide2{
+  0%{margin-left:0px;}
+  50%{margin-left:250px;}
+  100%{margin-left:0px;}
+}
+
+@keyframes slide2{
+  0%{margin-left:0px;}
+  50%{margin-left:250px;}
+  100%{margin-left:0px;}
+}

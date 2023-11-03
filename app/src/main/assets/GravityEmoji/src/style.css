@@ -1,0 +1,18 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  position: relative;
+  background: #000;
+}
+canvas{
+  width:960px;
+  height:960px;
+  margin-left:-480px;
+  left:50%;
+  top:1px;
+  position: absolute;
+  background-color: #000000;
+  transform-origin: 50% 0;
+}

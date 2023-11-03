@@ -1,0 +1,1157 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600);
+.ip-twitter-icon {
+  background-image: url("https://assets.codepen.io/44572/twitter_1.png");
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  border-radius: 50% 0 0 0;
+  bottom: 0;
+  box-shadow: -2px -2px 5px 1px rgba(0, 0, 0, 0.5);
+  height: 50px;
+  position: fixed;
+  right: 0;
+  transition: transform 0.3s linear;
+  width: 50px;
+  z-index: 1000;
+}
+
+.ip-twitter-icon:hover {
+  transform: scale(1.2);
+}
+
+@-webkit-keyframes clouds_move-1 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+@keyframes clouds_move-1 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-2 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-2 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-3 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-3 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-4 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-4 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-5 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-5 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-6 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-6 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-7 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-7 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-8 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-8 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-9 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-9 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes clouds_move-10 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@keyframes clouds_move-10 {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+@-webkit-keyframes airplane_move-1 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-1 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-2 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-2 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-3 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-3 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-4 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-4 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-5 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-5 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-6 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-6 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-7 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-7 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-8 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-8 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-9 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-9 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-10 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-10 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-11 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-11 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-12 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-12 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-13 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-13 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-14 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-14 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-15 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-15 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-16 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-16 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-17 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-17 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-18 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-18 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-19 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-19 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-20 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-20 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes airplane_move-21 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@keyframes airplane_move-21 {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+@-webkit-keyframes intro {
+  0%, 90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-110vw);
+  }
+}
+@keyframes intro {
+  0%, 90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-110vw);
+  }
+}
+@-webkit-keyframes intro-timer {
+  0%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes intro-timer {
+  0%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes intro-timer-2 {
+  0% {
+    opacity: 0;
+  }
+  1%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes intro-timer-2 {
+  0% {
+    opacity: 0;
+  }
+  1%, 100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes stage_move {
+  0% {
+    top: 30%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+@keyframes stage_move {
+  0% {
+    top: 30%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+@-webkit-keyframes timer {
+  0% {
+    opacity: 0.25;
+    width: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes timer {
+  0% {
+    opacity: 0.25;
+    width: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    width: 100%;
+  }
+}
+@-webkit-keyframes gameover {
+  0%, 99% {
+    transform: translateY(-120vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes gameover {
+  0%, 99% {
+    transform: translateY(-120vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex: 1 0 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+}
+
+.wrapper {
+  counter-reset: game;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.intro {
+  height: 100vh;
+  width: 100vw;
+  -webkit-animation: intro 10s linear 1s forwards;
+          animation: intro 10s linear 1s forwards;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  left: 0;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  z-index: 22;
+}
+.intro h1 {
+  align-self: center;
+  border-bottom: solid 2px black;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.intro .instructions {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.intro .instructions div {
+  margin-bottom: 10px;
+}
+.intro .instructions div:last-child {
+  margin-bottom: 0;
+}
+.intro--timer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 60px;
+}
+.intro--timer div {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+.intro--timer div.red {
+  -webkit-animation: intro-timer 1s linear 5s forwards;
+          animation: intro-timer 1s linear 5s forwards;
+  background-color: red;
+  opacity: 1;
+}
+.intro--timer div.yellow {
+  -webkit-animation: intro-timer 1s linear 5s forwards;
+          animation: intro-timer 1s linear 5s forwards;
+  background-color: yellow;
+}
+.intro--timer div.green {
+  -webkit-animation: intro-timer-2 1s linear 6s forwards;
+          animation: intro-timer-2 1s linear 6s forwards;
+  background-color: #37c87b;
+}
+.intro--timer div:last-child {
+  margin-bottom: 0;
+}
+
+.stage {
+  -webkit-animation: stage_move 20s linear forwards;
+          animation: stage_move 20s linear forwards;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44572/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  display: flex;
+  height: 150vh;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: 0;
+}
+
+input[type=radio] {
+  height: 0;
+  width: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  left: 0;
+  outline: 0;
+  position: absolute;
+  top: 0;
+}
+input[type=radio]:checked {
+  counter-increment: game;
+}
+input[type=radio]:nth-of-type(2n+2):checked {
+  counter-increment: game 5;
+}
+input[type=radio]:nth-of-type(3n+3):checked {
+  counter-increment: game 10;
+}
+
+.cloud {
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%/100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  left: calc(-100vw - 100px);
+  position: absolute;
+  z-index: 1;
+}
+.cloud:before, .cloud:after {
+  background-color: white;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+}
+.cloud:before {
+  height: 40px;
+  left: 10%;
+  top: -40%;
+  width: 40px;
+}
+.cloud:after {
+  height: 60px;
+  right: 5%;
+  top: -70%;
+  width: 60px;
+}
+.cloud:nth-of-type(2n+2) {
+  transform: scale(0.7);
+}
+.cloud:nth-of-type(2n+2):before, .cloud:nth-of-type(2n+2):after {
+  box-shadow: -1px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.cloud:nth-of-type(3n+3) {
+  transform: scale(0.5);
+}
+.cloud:nth-of-type(3n+3):before, .cloud:nth-of-type(3n+3):after {
+  box-shadow: -1px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.cloud:nth-of-type(even):before, .cloud:nth-of-type(even):after {
+  box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.cloud:nth-of-type(even):before {
+  z-index: 1;
+}
+.cloud:nth-of-type(1) {
+  top: 48.1475446008vh;
+  -webkit-animation: clouds_move-1 45s linear 1.5s infinite;
+          animation: clouds_move-1 45s linear 1.5s infinite;
+}
+.cloud:nth-of-type(2) {
+  top: 2.0860677238vh;
+  -webkit-animation: clouds_move-2 75s linear 1.5s infinite;
+          animation: clouds_move-2 75s linear 1.5s infinite;
+}
+.cloud:nth-of-type(3) {
+  top: 55.62079082vh;
+  -webkit-animation: clouds_move-3 55s linear 1.5s infinite;
+          animation: clouds_move-3 55s linear 1.5s infinite;
+}
+.cloud:nth-of-type(4) {
+  top: 4.0845806464vh;
+  -webkit-animation: clouds_move-4 40s linear 1.5s infinite;
+          animation: clouds_move-4 40s linear 1.5s infinite;
+}
+.cloud:nth-of-type(5) {
+  top: 11.1123383234vh;
+  -webkit-animation: clouds_move-5 85s linear 1.5s infinite;
+          animation: clouds_move-5 85s linear 1.5s infinite;
+}
+.cloud:nth-of-type(6) {
+  top: 68.7669608982vh;
+  -webkit-animation: clouds_move-6 70s linear 1.5s infinite;
+          animation: clouds_move-6 70s linear 1.5s infinite;
+}
+.cloud:nth-of-type(7) {
+  top: 54.4971912005vh;
+  -webkit-animation: clouds_move-7 50s linear 1.5s infinite;
+          animation: clouds_move-7 50s linear 1.5s infinite;
+}
+.cloud:nth-of-type(8) {
+  top: 58.4330320539vh;
+  -webkit-animation: clouds_move-8 65s linear 1.5s infinite;
+          animation: clouds_move-8 65s linear 1.5s infinite;
+}
+.cloud:nth-of-type(9) {
+  top: 37.8540663774vh;
+  -webkit-animation: clouds_move-9 55s linear 1.5s infinite;
+          animation: clouds_move-9 55s linear 1.5s infinite;
+}
+.cloud:nth-of-type(10) {
+  top: 71.8241648567vh;
+  -webkit-animation: clouds_move-10 15s linear 1.5s infinite;
+          animation: clouds_move-10 15s linear 1.5s infinite;
+}
+
+.airplane {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44572/airplane-04.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  bottom: -100px;
+  height: 100px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 75px;
+}
+.airplane:nth-of-type(2n+2) {
+  transform: translateX(-50%) scale(0.66);
+}
+.airplane:nth-of-type(3n+3) {
+  transform: translateX(-50%) scale(0.33);
+}
+.airplane:hover {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44572/crosshir.png) 25 15, auto;
+}
+.airplane:nth-of-type(1) {
+  left: 30.2556237686vw;
+  -webkit-animation: airplane_move-1 16s linear 13s infinite;
+          animation: airplane_move-1 16s linear 13s infinite;
+}
+.airplane:nth-of-type(2) {
+  left: 81.4422381789vw;
+  -webkit-animation: airplane_move-2 8s linear 12s infinite;
+          animation: airplane_move-2 8s linear 12s infinite;
+}
+.airplane:nth-of-type(3) {
+  left: 23.2697690867vw;
+  -webkit-animation: airplane_move-3 14s linear 12s infinite;
+          animation: airplane_move-3 14s linear 12s infinite;
+}
+.airplane:nth-of-type(4) {
+  left: 7.015192084vw;
+  -webkit-animation: airplane_move-4 16s linear 13s infinite;
+          animation: airplane_move-4 16s linear 13s infinite;
+}
+.airplane:nth-of-type(5) {
+  left: 37.90071499vw;
+  -webkit-animation: airplane_move-5 12s linear 12s infinite;
+          animation: airplane_move-5 12s linear 12s infinite;
+}
+.airplane:nth-of-type(6) {
+  left: 49.496512734vw;
+  -webkit-animation: airplane_move-6 14s linear 11s infinite;
+          animation: airplane_move-6 14s linear 11s infinite;
+}
+.airplane:nth-of-type(7) {
+  left: 23.987376696vw;
+  -webkit-animation: airplane_move-7 8s linear 11s infinite;
+          animation: airplane_move-7 8s linear 11s infinite;
+}
+.airplane:nth-of-type(8) {
+  left: 48.5911396691vw;
+  -webkit-animation: airplane_move-8 20s linear 13s infinite;
+          animation: airplane_move-8 20s linear 13s infinite;
+}
+.airplane:nth-of-type(9) {
+  left: 51.6429700658vw;
+  -webkit-animation: airplane_move-9 2s linear 13s infinite;
+          animation: airplane_move-9 2s linear 13s infinite;
+}
+.airplane:nth-of-type(10) {
+  left: 56.5694701181vw;
+  -webkit-animation: airplane_move-10 14s linear 12s infinite;
+          animation: airplane_move-10 14s linear 12s infinite;
+}
+.airplane:nth-of-type(11) {
+  left: 14.3491083444vw;
+  -webkit-animation: airplane_move-11 16s linear 12s infinite;
+          animation: airplane_move-11 16s linear 12s infinite;
+}
+.airplane:nth-of-type(12) {
+  left: 51.9230749183vw;
+  -webkit-animation: airplane_move-12 12s linear 11s infinite;
+          animation: airplane_move-12 12s linear 11s infinite;
+}
+.airplane:nth-of-type(13) {
+  left: 55.3572470996vw;
+  -webkit-animation: airplane_move-13 18s linear 13s infinite;
+          animation: airplane_move-13 18s linear 13s infinite;
+}
+.airplane:nth-of-type(14) {
+  left: 42.6366620748vw;
+  -webkit-animation: airplane_move-14 10s linear 13s infinite;
+          animation: airplane_move-14 10s linear 13s infinite;
+}
+.airplane:nth-of-type(15) {
+  left: 9.2386775655vw;
+  -webkit-animation: airplane_move-15 10s linear 13s infinite;
+          animation: airplane_move-15 10s linear 13s infinite;
+}
+.airplane:nth-of-type(16) {
+  left: 69.5101967766vw;
+  -webkit-animation: airplane_move-16 16s linear 12s infinite;
+          animation: airplane_move-16 16s linear 12s infinite;
+}
+.airplane:nth-of-type(17) {
+  left: 8.5011293844vw;
+  -webkit-animation: airplane_move-17 8s linear 11s infinite;
+          animation: airplane_move-17 8s linear 11s infinite;
+}
+.airplane:nth-of-type(18) {
+  left: 21.8005383383vw;
+  -webkit-animation: airplane_move-18 20s linear 12s infinite;
+          animation: airplane_move-18 20s linear 12s infinite;
+}
+.airplane:nth-of-type(19) {
+  left: 64.0008206863vw;
+  -webkit-animation: airplane_move-19 8s linear 13s infinite;
+          animation: airplane_move-19 8s linear 13s infinite;
+}
+.airplane:nth-of-type(20) {
+  left: 16.7231090234vw;
+  -webkit-animation: airplane_move-20 18s linear 12s infinite;
+          animation: airplane_move-20 18s linear 12s infinite;
+}
+.airplane:nth-of-type(21) {
+  left: 59.9992584873vw;
+  -webkit-animation: airplane_move-21 6s linear 13s infinite;
+          animation: airplane_move-21 6s linear 13s infinite;
+}
+
+.airplane_1:checked ~ .airplane-1 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_2:checked ~ .airplane-2 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_3:checked ~ .airplane-3 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_4:checked ~ .airplane-4 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_5:checked ~ .airplane-5 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_6:checked ~ .airplane-6 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_7:checked ~ .airplane-7 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_8:checked ~ .airplane-8 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_9:checked ~ .airplane-9 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_10:checked ~ .airplane-10 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_11:checked ~ .airplane-11 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_12:checked ~ .airplane-12 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_13:checked ~ .airplane-13 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_14:checked ~ .airplane-14 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_15:checked ~ .airplane-15 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_16:checked ~ .airplane-16 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_17:checked ~ .airplane-17 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_18:checked ~ .airplane-18 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_19:checked ~ .airplane-19 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_20:checked ~ .airplane-20 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.airplane_21:checked ~ .airplane-21 {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.01);
+  transition: all 0.5s linear;
+}
+
+.timer {
+  height: 5px;
+  width: 100%;
+  background-color: #4d4d4d;
+  border-bottom: solid 1px black;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.timer span {
+  height: 5px;
+  width: 100%;
+  -webkit-animation: timer 50s linear 12s forwards;
+          animation: timer 50s linear 12s forwards;
+  background-color: #37c87b;
+  display: block;
+  opacity: 0;
+}
+
+.gameover {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  -webkit-animation: gameover 50s linear 12s forwards;
+          animation: gameover 50s linear 12s forwards;
+  background-color: rgba(55, 200, 123, 0.75);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transform: translateY(-120vh);
+  z-index: 11;
+}
+.gameover a {
+  color: white;
+}
+
+.score {
+  background-color: white;
+  border: solid 1px black;
+  bottom: 10px;
+  font-size: 1.2rem;
+  left: 10px;
+  padding: 10px;
+  position: fixed;
+  z-index: 13;
+}
+.score--current:after {
+  content: counter(game);
+  font-weight: 600;
+  margin: 0 10px;
+}

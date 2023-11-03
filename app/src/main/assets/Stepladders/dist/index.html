@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Snakes and Ladders by Geoffrey Swenson</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="gameBoard" id="gameBoardOuter">
+  <div id="gameBoard" class="gameBoardInner"></div>
+  <div class="gameInterface">
+    <div class="dice show3" id="dice">
+      <div><span></span></div>
+      <div><span></span><span></span></div>
+      <div><span></span><span></span><span></span></div>
+      <div>
+        <div>
+          <span></span><span></span>
+        </div>
+        <div>
+          <span></span><span></span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span></span><span></span>
+        </div>
+        <div>
+          <span></span>
+        </div>
+        <div>
+          <span></span><span></span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+    <div id="player" class="player"></div>
+    <div class="players">
+      <div id="player0" class="player0"><span>You</span></div>
+      <div id="player1" class="player1"><span>Computer</span></div>
+    </div>
+    <button id="play" onclick="app.play()">Roll</button>
+  </div>
+  <div class="dialog" id="dialog">
+    <h1 id="dialogText">Computer Wins!</h1>
+    <button onclick="app.reset()">Play Again</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

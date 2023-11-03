@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pangolin&display=swap');
+
+body {
+  background-color: white;
+  background-image: url("https://i.postimg.cc/bJtfyF2K/grid-paper2.jpg");
+  color: #4D4D4D;
+  padding-top: 10vh;
+  text-align: center;  
+}
+
+button {
+  background-color: white;
+  border: 1px dotted grey;
+  border-radius: 20px;
+  color: #4D4D4D;
+  font-family: "Pangolin";
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;  
+}
+
+button:hover {
+  background-color: #DBDBDB;
+}
+
+h1 {
+  font-family: "Luckiest guy";
+  font-size: 50px;  
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: "Pangolin";
+  font-size: 18px; 
+}
+
+#result {
+  color: black;
+  font-size: 22px;
+}

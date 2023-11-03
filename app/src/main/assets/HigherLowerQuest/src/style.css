@@ -1,0 +1,265 @@
+* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+}
+
+a {
+		color: #F44336;
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: underline;
+}
+
+h1,
+h2 {
+		text-align: center;
+		margin-bottom: 20px;
+}
+
+body {
+		background-color: #F44336;
+		color: #ffffff;
+		text-align: center;
+}
+
+button {
+		transition-duration: 0.4s;
+		width: 160px;
+		height: 36px;
+		background-color: #ffffff;
+		border: none;
+		color: #F44336;
+		font-size: 0.95rem;
+		display: block;
+		margin: 12px auto;
+}
+
+button:hover {
+		width: 200px;
+		cursor: pointer;
+}
+
+button:active,
+button:hover {
+		transition-duration: 0.3s;
+		outline: none;
+		background-color: #fee5e3;
+}
+
+button:focus {
+		outline: none;
+}
+
+.page {
+		display: none;
+		width: 500px;
+		height: 200px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -100px;
+		margin-left: -250px;
+}
+
+#page-1 {
+		display: block;
+}
+
+.used {
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		max-width: 20%;
+}
+
+.tries {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+}
+
+.card {
+		background-color: #ffffff;
+		padding: 10px;
+		border-radius: 3px;
+}
+
+.input {
+		display: block;
+		margin: 20px auto;
+		width: 240px;
+		font-size: 1.5rem;
+		outline: none;
+		border: none;
+		color: #333333;
+}
+
+#page-3 h2 span {
+		font-size: 3.2rem;
+}
+
+@media all and (max-width: 1000px) {
+		.used {
+				display: none;
+		}
+}
+/*animations*/
+
+.show {
+		-webkit-animation: show 1.5s;
+		-webkit-animation-iteration-count: 1;
+		-moz-animation: show 1.5s;
+		-moz-animation-iteration-count: 1;
+		-ms-animation: show 1.5s;
+		-ms-animation-iteration-count: 1;
+		-o-animation: show 1.5s;
+		-o-animation-iteration-count: 1;
+		animation: show 1.5s;
+		animation-iteration-count: 1;
+}
+
+.hide {
+		-webkit-animation: hide 1.5s;
+		-webkit-animation-iteration-count: 1;
+		-moz-animation: hide 1.5s;
+		-moz-animation-iteration-count: 1;
+		-ms-animation: hide 1.5s;
+		-ms-animation-iteration-count: 1;
+		-o-animation: hide 1.5s;
+		-o-animation-iteration-count: 1;
+		animation: hide 1.5s;
+		animation-iteration-count: 1;
+}
+
+.alert {
+		-webkit-animation: alert 1000ms infinite;
+		-moz-animation: alert 1000ms infinite;
+		-ms-animation: alert 1000ms infinite;
+		-o-animation: alert 1000ms infinite;
+		animation: alert 1000ms infinite;
+}
+
+@-webkit-keyframes show {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-moz-keyframes hide {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-ms-keyframes hide {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-o-keyframes hide {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@keyframes hide {
+		from {
+				opacity: 0;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-webkit-keyframes hide {
+		to {
+				opacity: 0;
+		}
+}
+
+@-moz-keyframes hide {
+		to {
+				opacity: 0;
+		}
+}
+
+@-ms-keyframes hide {
+		to {
+				opacity: 0;
+		}
+}
+
+@-o-keyframes hide {
+		to {
+				opacity: 0;
+		}
+}
+
+@keyframes hide {
+		to {
+				opacity: 0;
+		}
+}
+
+@-webkit-keyframes alert {
+		from {
+				opacity: 0.5;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-moz-keyframes alert {
+		from {
+				opacity: 0.5;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-ms-keyframes alert {
+		from {
+				opacity: 0.5;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@-o-keyframes alert {
+		from {
+				opacity: 0.5;
+		}
+		to {
+				opacity: 1;
+		}
+}
+
+@keyframes alert {
+		from {
+				opacity: 0.5;
+		}
+		to {
+				opacity: 1;
+		}
+}

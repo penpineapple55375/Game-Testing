@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Halloween Wreckage w/ Leaderboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- inspired by https://codepen.io/HunorMarton/pen/ExNzWqm -->
+<!-- high score leaderboard now functional ... scores sometimes take a bit to populate when newly added -->
+<!--<p class='disclaimer'>**Scores may take a few minutes to populate when newly added**</p>-->
+<div id='instructions'>
+  <strong>START</strong><br>
+  Tap Hold button to avoid crashing
+</div>
+<button id='highscores' onclick='showScores()'>High Scores</button>
+<div id='scoreboard' onclick='showScores()'>HIGH SCORES</div>
+<div id='game_box'>
+  <div id='laps_count'>0</div>
+  <div class='track'></div>
+  <div id='player' class='half'>
+    <div id='playa'>
+      <div id='car'></div>
+    </div>
+  </div>
+  <div id='not_player' class='half'>
+    <div id='not_playa'>
+      <div id='witch' class='en_car'></div>
+      <div id='pumpkin' class='en_car'></div>
+      <div id='bat' class='en_car'></div>
+      <div id='spider' class='en_car'></div>
+    </div>
+  </div>
+  <div id='tree-center' class='tree_for_real'></div>
+  <div id='tree1' class='tree_for_real'></div>
+  <div id='tree2' class='tree_for_real'></div>
+</div>
+<button id="speedButton">HOLD</button>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

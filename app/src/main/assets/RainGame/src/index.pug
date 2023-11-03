@@ -1,0 +1,18 @@
+#app
+  #canvas_container
+  #gui
+    | Time left: {{ timeLimit }}<br>
+    | Fires extinguished: {{ firesExt }}<br>
+    | Score: {{ score }}<br>
+  #overlay(:class="inGame ? '' : 'shown'")
+    #info
+      h1.pe
+        |Rain Game
+      span.pe|(Opposites Challenge)<br>
+      small.pe|You have 20 seconds. How many fires can You extinguish?
+      p
+        button(@click="startGame()")
+          |GO
+  #timeout(:class="[gameOver ? 'shown' : '', 'pe']")| Fires: {{firesExt}}  Score: {{score}}<br>
+    button.pa(@click="restartGame()")
+      |Again?

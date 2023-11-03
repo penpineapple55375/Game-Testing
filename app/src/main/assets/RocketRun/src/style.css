@@ -1,0 +1,229 @@
+/* :root {
+  top,left,margin,padding: 0;
+}
+ */
+.container {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+/*   position: relative;
+  top: 100px;
+  left: 10px; */
+/*   display: flex;
+  justify-content: center;
+  align-self: center; */
+}
+
+body {
+  background-color: #212121;
+}
+
+#space {
+  position: relative;
+  margin: auto;
+/*   left: 10px; */ 
+  top: 100px;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+.score {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  color: #fff;
+  z-index: 5;
+}
+.score, .highscore p {
+  font-size: 1.5em;
+}
+
+.highscore {
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  color: #fff;
+  z-index: 5;
+}
+
+.start {
+  position: absolute;
+  display: visible;
+  color: rgb(255,0,0);
+  -moz-animation: startFlash 2s ease infinite alternate;
+  -webkit-animation: startFlash 2s ease infinite alternate;
+  animation: startFlash 2s ease infinite alternate;
+  z-index: 5;
+  width: 50%;
+  margin: 25% 25%;
+}
+.start .hidden {
+  display: none;
+}
+.start p {
+  text-align: center;
+  font-size: 2em;
+}
+
+.gameover {
+  
+}
+.space {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 400px;
+  background: url(https://raw.githubusercontent.com/pahosler/rocket-rock-dodger/master/images/space1.jpg);
+  /*background-size: cover;*/
+/*   background: url(https://source.unsplash.com/random/100x200); */
+  background-size: cover;
+  -moz-animation: -moz-backgroundScroll 25s linear infinite;
+  -webkit-animation: backgroundScroll 25s linear infinite;
+  animation: backgroundScroll 25s linear infinite;
+}
+
+.ship {
+  position: absolute;
+/*   border: 1px solid white; */
+  z-index: 5;
+}
+
+/* .rock {
+  background: url(https://pahosler.com/images/rock.png);
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  -webkit-animation: rockScroll 4s linear infinite;
+  animation: rockScroll 4s linear infinite;
+}
+ */
+.explode {
+  display: none;
+  position: absolute; 
+  top: 30px;
+  left: 150px;
+  height: 130px;
+  width: 160px;
+  background: url(https://raw.githubusercontent.com/pahosler/rocket-rock-dodger/master/images/explode-color-300px.png);
+  background-size: cover;
+  transform-origin: center center;
+  -webkit-animation: boom .5s ease-in-out alternate infinite ;
+  -moz-animation: boom .5s ease-in-out alternate infinite ;
+  z-index: 6;
+  animation: boom .5s ease-in-out alternate infinite ;
+}
+
+@-webkit-keyframes boom {
+  from {
+    transform: scale(0,0);
+  }
+  to {
+    transform: scale(2,1.5)
+  }
+}
+
+@-webkit-keyframes rockSpin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rockSpin {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -601px 0;
+  }
+}
+
+@-moz-keyframes backgroundScroll {
+  from {
+    background-position: 0px 0px, 0px 0px;
+  }
+  to {
+    background-position: -601px 0px, 0px 0px;
+  }
+}
+
+@-webkit-keyframes startFlash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes startFlash {
+  from {
+    -moz-opacity: 0;
+  }
+  to {
+    -moz-opacity: 1;
+  }
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -601px 0;
+  }
+}
+
+@keyframes boom {
+  from {
+    transform: scale(0,0);
+  }
+  to {
+    transform: scale(2,1.5)
+  }
+}
+@keyframes rockSpin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes startFlash {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*@-moz-media only screen and (max-width: 1000px) {*/
+/*  #space {*/
+/*    top:0;*/
+/*    left:0;*/
+/*  }*/
+/*}*/
+
+@media only screen and (max-width: 1000px) {
+  #space {
+    top:0;
+    left:0;
+  }
+}

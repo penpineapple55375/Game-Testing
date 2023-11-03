@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 🌧️ Rain Game 🔥 (Opposites challenge)</title>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div id="canvas_container"></div>
+  <div id="gui">
+    Time left: {{ timeLimit }}<br>
+    Fires extinguished: {{ firesExt }}<br>
+    Score: {{ score }}<br>
+  </div>
+  <div id="overlay" :class="inGame ? '' : 'shown'">
+    <div id="info">
+      <h1 class="pe">Rain Game</h1><span class="pe">(Opposites Challenge)<br></span><small class="pe">You have 20 seconds. How many fires can You extinguish?</small>
+      <p>
+        <button @click="startGame()">GO</button>
+      </p>
+    </div>
+  </div>
+  <div id="timeout" :class="[gameOver ? 'shown' : '', 'pe']">Fires: {{firesExt}}  Score: {{score}}<br>
+    <button class="pa" @click="restartGame()">Again?</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

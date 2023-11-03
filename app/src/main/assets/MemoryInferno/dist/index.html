@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fire in the dom 🔥</title>
+  <link rel='stylesheet' href='https://cdn.rawgit.com/VsevolodTrofimov/Ripple.js/master/dist/ripple.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="explosion_wrapper">
+  <img class="explosion" alt="explosion">
+</div>
+
+<header>
+  <!--<h1><a href="https://mburakerman.github.io/firemember/" class="title">FIREMEMBER</a></h1>-->
+  <!--<p class="desc">Fire in the dom</p>-->
+</header>
+
+<main>
+  <!--<div class="info">
+    <p>Try to remember fires and click on cards to find them.</p>
+    <p>Every 2 step you level up. 15 is the last level.</p>
+    <p>Max score is 30.</p>
+    <p>You can make only 1 mistake.</p>
+    <p>Have fun!</p>
+  </div>-->
+
+  <button id="start"> Start</button>
+
+  <ul id="firemember" data-tilt data-tilt-reverse="true" data-tilt-max="5"></ul>
+
+  <p class="score_wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" class="svgScore" width="16" height="auto" viewBox="0 0 24 24">
+                    <polygon points="14 2 18 6 7 17 3 17 3 13 14 2" fill="none" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    <line x1="3" y1="22" x2="21" y2="22" fill="none" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg> <span id="score"></span>
+  </p>
+
+</main>
+<!-- partial -->
+  <script src='https://cdn.rawgit.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.babel.min.js'></script>
+<script src='https://cdn.rawgit.com/VsevolodTrofimov/Ripple.js/master/dist/ripple.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

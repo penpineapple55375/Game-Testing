@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+body {
+  font-family: "Shadows Into Light", cursive;
+  height: 100%;
+}
+
+.container {
+  /*background: #272727;*/
+  background-image: url('file:///android_res/mipmap/mosquitohouse.png');
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.heading {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  padding: 0;
+  font-size: 4em;
+  text-align: center;
+  color: #ffbe00;
+}
+.heading span {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.game-wrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  max-width: 650px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+.game-wrapper__hole {
+  display: flex;
+  justify-content: center;
+  border-bottom: 10px solid #80620c;
+  width: 31%;
+  max-height: 180px;
+  margin: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-wrapper__hole img {
+  position: relative;
+  top: 100%;
+  transition: all 0.4s;
+}
+.game-wrapper__hole.up img {
+  top: 0;
+}
+
+.scoreboard {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  color: #ffffff;
+}
+.scoreboard .score {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.scoreboard .score h2 {
+  font-size: 4em;
+}
+
+.restart {
+  padding: 10px 22px;
+  border-radius: 5px;
+  background: #ffbe00;
+  font-size: 22px;
+  color: #000000;
+  border: 0;
+  text-transform: capitalize;
+  width: 270px;
+  margin-top: 10px;
+}
+
+.remarks {
+  color: #ffbe00;
+  font-size: 3em;
+  margin: 22px auto;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 2.7rem;
+}

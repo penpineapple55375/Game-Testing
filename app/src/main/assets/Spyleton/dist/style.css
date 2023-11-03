@@ -1,0 +1,59 @@
+body {
+	height: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	background: radial-gradient(
+		circle,
+		rgba(76, 228, 14, 1) 63%,
+		rgba(2, 54, 25, 1) 100%
+	);
+	overflow: hidden;
+}
+
+.spiders-skeletons {
+	font-size: 12rem;
+	margin: auto;
+}
+
+canvas#canvas {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 100vh;
+}
+
+#controls {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	transition: opacity 0.5s ease,
+							background-color 0.3s ease;
+	
+	opacity: 0;
+	pointer-events: none;
+}
+
+#controls.show {
+	opacity: 1;
+	pointer-events: all;
+}
+
+#reset {
+	padding: 0.75rem 2rem;
+	background-color: #FF7518;
+	border-radius: 0.25rem;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	border: 3px solid #000;
+	cursor: pointer;
+}
+
+#reset:hover {
+	background-color: #fff;
+}

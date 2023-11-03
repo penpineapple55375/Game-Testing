@@ -1,0 +1,342 @@
+body {
+	background-color: #34495e;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+/*
+ Game style
+*/
+input {
+	display: none;
+}
+.game {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+.buttons {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+.buttons > * {
+	position: absolute;
+	background-color: #9b59b6;
+	color: #fff;
+	font-weight: bold;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #8e44ad;
+	cursor: pointer;
+	display: none;
+	user-select: none;
+}
+.buttons > *:active {
+	opacity: 0.8;
+}
+.screen {
+	width: 50vw;
+	height: 30vw;
+	border: 2px solid #2c3e50;
+	background-color: #3498db;
+	position: relative;
+	overflow: hidden;
+}
+.over {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background-color: #ecf0f1;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	left: -100vw;
+	font-size: 30px;
+	color: #2c3e50;
+	user-select: none;
+}
+.over.start {
+	left: initial;
+}
+.over.game_over {
+	color: #fff;
+	background-color: #c0392b;
+}
+.over label, .over a {
+	background-color: #f1c40f;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+	font-size: 20px;
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+.over a {
+	margin-top: 30px;
+}
+.ground {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3.5vw;
+	background-color: #cc8e35;
+	border-top: 1.5vw solid #2ecc71;
+	box-shadow: 0 -5px #27ae60;
+}
+.player {
+	position: absolute;
+	bottom: 5vw;
+	left: 5vw;
+	height: 4.2vw;
+	width: 3vw;
+	z-index: 1;
+}
+.player * {
+	position: absolute;
+}
+.player > div {
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+}
+.player .head {
+	height: 1vw;
+	width: 1vw;
+	left: 2vw;
+	border-radius: 50%;
+	background-color: #000;
+}
+.player .body {
+	height: 2vw;
+	width: 2px;
+	top: 1vw;
+	background-color: #000;
+	left: calc(2.5vw - 1px);
+}
+.player .arm {
+	height: 2px;
+	width: 1vw;
+	top: 1.6vw;
+	left: 2.5vw;
+	background-color: #000;
+}
+.player .leg {
+	top: 3vw;
+	left: calc(2.5vw - 1px);
+	animation: 0.2s run alternate infinite linear;
+}
+.player .leg + .leg {
+	animation-delay: 0.2s;
+}
+.player .leg:before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 0.7vw;
+	background-color: #000;
+	transform-origin: top;
+	transform: rotate(-60deg);
+}
+.player .leg:after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 0.7vw;
+	left: 0.6vw;
+	top: 0.3vw;
+	background-color: #000;
+	transform-origin: top;
+	transform: rotate(10deg);
+}
+.obstacle {
+	position: absolute;
+	height: 3vw;
+	width: 3vw;
+	background-color: #cc8e35;
+	border-top: 1.5vw solid #2ecc71;
+	box-shadow: 0 -5px #27ae60;
+	bottom: 2vw;
+	left: 50vw;
+	animation: 3s obstacle-move linear;
+	display: none;
+}
+.obstacle.victory {
+    background-color: #e74c3c;
+    border: 0;
+    height: calc(5vw + 5px);
+    bottom: 0;
+    box-shadow: none;
+}
+
+/*
+ Game logic
+ That's where magic happens
+*/
+#s-1:checked ~ .game label[for="s-2"] {
+	display: flex;
+}
+#s-2:checked ~ .game label[for="s-1"] {
+	display: flex;
+}
+#s-1:checked ~ .game .player {
+	animation: 0.3s jump-1 alternate 2 linear;
+}
+#s-2:checked ~ .game .player {
+	animation: 0.3s jump-2 alternate 2 linear;
+}
+#o-2:checked ~ .game .player > div {
+	animation: 0.3s jump-o-2 alternate 2 linear;
+}
+#o-3:checked ~ .game .player > div {
+	animation: 0.3s jump-o-3 alternate 2 linear;
+}
+#o-4:checked ~ .game .player > div {
+	animation: 0.3s jump-o-4 alternate 2 linear;
+}
+#o-5:checked ~ .game .player > div {
+	animation: 0.3s jump-o-5 alternate 2 linear;
+}
+#win:checked ~ .game .player > div {
+	animation: 0.3s jump-o-6 alternate 2 linear;
+}
+
+input[name="obstacle"]:checked ~ .game .start {
+	display: none;
+}
+
+#o-1:checked ~ .game .game_over {
+	animation: show-1 0s 2.4s forwards;
+}
+#o-1:checked ~ .game label[for="o-2"] {
+	display: flex;
+	left: -100vw;
+	animation: show-hide-1 0.4s 2s linear forwards;
+}
+#o-1:checked ~ .game .obstacle-1,
+#o-1 ~ input[name="obstacle"]:checked ~ .game .obstacle-1 {
+	display: block;
+}
+
+#o-2:checked ~ .game .game_over {
+	animation: show-2 0s 2.4s forwards;
+}
+#o-2:checked ~ .game label[for="o-3"] {
+	display: flex;
+	left: -100vw;
+	animation: show-hide-2 0.4s 2s linear forwards;
+}
+#o-2:checked ~ .game .obstacle-2,
+#o-2 ~ input[name="obstacle"]:checked ~ .game .obstacle-2 {
+	display: block;
+}
+
+#o-3:checked ~ .game .game_over {
+	animation: show-3 0s 2.4s forwards;
+}
+#o-3:checked ~ .game label[for="o-4"] {
+	display: flex;
+	left: -100vw;
+	animation: show-hide-3 0.4s 2s linear forwards;
+}
+#o-3:checked ~ .game .obstacle-3,
+#o-3 ~ input[name="obstacle"]:checked ~ .game .obstacle-3 {
+	display: block;
+}
+
+#o-4:checked ~ .game .game_over {
+	animation: show-4 0s 2.4s forwards;
+}
+#o-4:checked ~ .game label[for="o-5"] {
+	display: flex;
+	left: -100vw;
+	animation: show-hide-4 0.4s 2s linear forwards;
+}
+#o-4:checked ~ .game .obstacle-4,
+#o-4 ~ input[name="obstacle"]:checked ~ .game .obstacle-4 {
+	display: block;
+}
+
+#o-5:checked ~ .game .game_over {
+	animation: show-5 0s 2.4s forwards;
+}
+#o-5:checked ~ .game label[for="win"] {
+	display: flex;
+	left: -100vw;
+	animation: show-hide-5 0.4s 2s linear forwards;
+}
+#o-5:checked ~ .game .obstacle-5,
+#o-5 ~ input[name="obstacle"]:checked ~ .game .obstacle-5 {
+	display: block;
+}
+
+#win:checked ~ .game .win {
+	animation: show-win 0s 2.6s forwards;
+}
+#win:checked ~ .game .victory {
+	display: block;
+}
+
+/*
+ Animations
+*/
+@keyframes jump-1 {to {bottom: 9vw}}
+@keyframes jump-2 {to {bottom: 9vw}}
+@keyframes jump-o-1 {to {bottom: 4vw}}
+@keyframes jump-o-2 {to {bottom: 4vw}}
+@keyframes jump-o-3 {to {bottom: 4vw}}
+@keyframes jump-o-4 {to {bottom: 4vw}}
+@keyframes jump-o-5 {to {bottom: 4vw}}
+@keyframes jump-o-6 {to {bottom: 4vw}}
+
+@keyframes run {to {transform: rotate(80deg);}}
+@keyframes obstacle-move {to {left: -3vw}}
+
+@keyframes show-hide-1 {
+	0% {left: initial;}
+	98% {opacity: 1}
+	99% {opacity: 0; left: initial;}
+	100% {left: -100vw}
+}
+@keyframes show-hide-2 {
+	0% {left: initial;}
+	98% {opacity: 1}
+	99% {opacity: 0; left: initial;}
+	100% {left: -100vw}
+}
+@keyframes show-hide-3 {
+	0% {left: initial;}
+	98% {opacity: 1}
+	99% {opacity: 0; left: initial;}
+	100% {left: -100vw}
+}
+@keyframes show-hide-4 {
+	0% {left: initial;}
+	98% {opacity: 1}
+	99% {opacity: 0; left: initial;}
+	100% {left: -100vw}
+}
+@keyframes show-hide-5 {
+	0% {left: initial;}
+	98% {opacity: 1}
+	99% {opacity: 0; left: initial;}
+	100% {left: -100vw}
+}
+
+@keyframes show-1 {to {left: initial;}}
+@keyframes show-2 {to {left: initial;}}
+@keyframes show-3 {to {left: initial;}}
+@keyframes show-4 {to {left: initial;}}
+@keyframes show-5 {to {left: initial;}}
+@keyframes show-win {to {left: initial;}}
