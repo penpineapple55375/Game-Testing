@@ -9,9 +9,9 @@ import android.webkit.WebViewClient
 
 class MainActivity : AppCompatActivity() {
     private lateinit var webView: WebView
-    //val webURL = "file:///android_asset/HigherLowerQuest/dist/index.html"
-    //val webURL = "https://play.famobi.com/knife-rain"
-    private val embededGame = ""
+    val webURL = "file:///android_asset/ChromeDino/dist/index.html"
+    //val webURL = "https://play.famobi.com/color-tunnel"
+    //private val embededGame = ""
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,20 +19,20 @@ class MainActivity : AppCompatActivity() {
         ///web view tester
         webView = findViewById(R.id.webView)
 
-        /*webView.webViewClient = WebViewClient()
+        webView.webViewClient = WebViewClient()
         webView.loadUrl(webURL)
         webView.settings.javaScriptEnabled = true
-        webView.settings.setSupportZoom(true)*/
+        webView.settings.setSupportZoom(true)
 
-        webView.loadData(embededGame, "text/html", "utf-8")
+        /*webView.loadData(embededGame, "text/html", "utf-8")
         webView.settings.javaScriptEnabled = true
         webView.settings.setSupportZoom(true)
-        webView.webChromeClient = WebChromeClient()
+        webView.webChromeClient = WebChromeClient()*/
 
     }
-    /*@Suppress("DEPRECATION")
+    @Suppress("DEPRECATION")
     override fun onBackPressed() {
         if (webView.canGoBack()) webView.goBack()
         else super.onBackPressed()
-    }*/
+    }
 }
